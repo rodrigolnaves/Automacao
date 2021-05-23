@@ -6,7 +6,7 @@ def linha():
 
 
 def pegaPosicaoDoMouse():
-    pos = str(pag.position()).replace("Point(x=", "").replace("y=", "").replace(")", "").split(', ')
+    pos = list(pag.position())
     return pos
 
 
